@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Places in Andhra Pradesh</title>
+    <link rel="stylesheet" href="./styles (1).css">
+</head>
+<body>
+    <h1>Places to Visit in Andhra Pradesh</h1>
+    <div id="places"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalTime"></p>
+            <p id="modalDistance"></p>
+            <div id="mapContainer">
+                <h3>Get Directions</h3>
+                <label for="source">Enter your source location:</label>
+                <input type="text" id="source" placeholder="Your location...">
+                <button id="getDirections">Get Directions</button>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="./script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
